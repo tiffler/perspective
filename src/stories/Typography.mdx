@@ -1,0 +1,220 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design System/Typography" />
+
+<style>{`
+  .type-page {
+    font-family: Inter, sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    color: #050505;
+  }
+  .type-section {
+    margin-bottom: 48px;
+  }
+  .type-section-title {
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #83838b;
+    margin: 0 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e9e9ea;
+  }
+  .type-row {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .type-sample {
+    flex: 1;
+    color: #050505;
+    margin: 0;
+  }
+  .type-meta {
+    flex-shrink: 0;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .type-meta-name {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #050505;
+  }
+  .type-meta-detail {
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    color: #83838b;
+  }
+`}</style>
+
+<div className="type-page">
+
+<div className="type-section">
+  <p className="type-section-title">Headings — Inter</p>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '48px', lineHeight: '1.21', margin: 0 }}>H1 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H1</span>
+      <span className="type-meta-detail">Inter 400 · 48px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 600, fontSize: '48px', lineHeight: '1.21', margin: 0 }}>H1 SemiBold</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H1 SemiBold</span>
+      <span className="type-meta-detail">Inter 600 · 48px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '48px', lineHeight: '1.21', margin: 0 }}>H1 Bold</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H1 Bold</span>
+      <span className="type-meta-detail">Inter 700 · 48px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '40px', lineHeight: '1.21', margin: 0 }}>H2 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H2</span>
+      <span className="type-meta-detail">Inter 400 · 40px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 600, fontSize: '40px', lineHeight: '1.21', margin: 0 }}>H2 SemiBold</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H2 SemiBold</span>
+      <span className="type-meta-detail">Inter 600 · 40px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '40px', lineHeight: '1.21', margin: 0 }}>H2 Bold</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H2 Bold</span>
+      <span className="type-meta-detail">Inter 700 · 40px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '36px', lineHeight: '1.21', margin: 0 }}>H3 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H3</span>
+      <span className="type-meta-detail">Inter 400 · 36px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '32px', lineHeight: '1.21', margin: 0 }}>H4 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H4</span>
+      <span className="type-meta-detail">Inter 400 · 32px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '24px', lineHeight: '1.21', margin: 0 }}>H5 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H5</span>
+      <span className="type-meta-detail">Inter 400 · 24px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '24px', lineHeight: '1.21', margin: 0 }}>H6 Regular</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Headings / H6</span>
+      <span className="type-meta-detail">Inter 400 · 24px · 1.21</span>
+    </div>
+  </div>
+</div>
+
+<div className="type-section">
+  <p className="type-section-title">Titles — Inter</p>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '20px', lineHeight: '1.21', margin: 0 }}>Card Title</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Titles / Card</span>
+      <span className="type-meta-detail">Inter 400 · 20px · 1.21</span>
+    </div>
+  </div>
+</div>
+
+<div className="type-section">
+  <p className="type-section-title">Body — Inter</p>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '16px', lineHeight: '1.5', margin: 0 }}>The quick brown fox jumps over the lazy dog</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Body / Default</span>
+      <span className="type-meta-detail">Inter 400 · 16px · 1.5</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '16px', lineHeight: '1.21', margin: 0 }}>The quick brown fox jumps over the lazy dog</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Body / Default Bold</span>
+      <span className="type-meta-detail">Inter 700 · 16px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '14px', lineHeight: '1.357', margin: 0 }}>The quick brown fox jumps over the lazy dog</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Body / Subtle</span>
+      <span className="type-meta-detail">Inter 400 · 14px · 1.357</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '14px', lineHeight: '1.21', margin: 0 }}>The quick brown fox jumps over the lazy dog</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Body / Subtle Bold</span>
+      <span className="type-meta-detail">Inter 700 · 14px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '20px', lineHeight: '1.21', margin: 0 }}>Table Header</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Body / Table Header</span>
+      <span className="type-meta-detail">Inter 400 · 20px · 1.21</span>
+    </div>
+  </div>
+</div>
+
+<div className="type-section">
+  <p className="type-section-title">Caption — Inter</p>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 500, fontSize: '12px', lineHeight: '1.21', margin: 0 }}>Caption medium</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Caption / M</span>
+      <span className="type-meta-detail">Inter 500 · 12px · 1.21</span>
+    </div>
+  </div>
+
+  <div className="type-row">
+    <p className="type-sample" style={{ fontFamily: 'Inter', fontWeight: 600, fontSize: '12px', lineHeight: '1.21', margin: 0 }}>Caption semibold</p>
+    <div className="type-meta">
+      <span className="type-meta-name">Caption / M Semibold</span>
+      <span className="type-meta-detail">Inter 600 · 12px · 1.21</span>
+    </div>
+  </div>
+</div>
+
+</div>

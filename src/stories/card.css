@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--token-card-gap);
+  padding: var(--token-card-padding);
+  border-radius: var(--token-card-radius);
+  background: var(--token-card-bg);
+  border: 1px solid var(--token-card-border);
+  box-shadow: var(--token-card-shadow);
+  box-sizing: border-box;
+}
