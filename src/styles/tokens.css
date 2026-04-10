@@ -11,7 +11,7 @@
 
   /* Neutral Light */
   --colors/neutral-light/0:   #ffffff;
-  --colors/neutral-light/50:  #f5f5f5;
+  --colors/neutral-light/50:  #fafafa;
   --colors/neutral-light/100: #e9e9ea;
   --colors/neutral-light/200: #d9d9db;
   --colors/neutral-light/300: #c9c9cc;
@@ -145,8 +145,8 @@
   --text/default:      #050505;
   --text/subtle:       #5c5c64;
   --text/muted:        #83838b;
-  --text/inverse:      #f5f5f5;
-  --text/on-solid:     #f5f5f5;
+  --text/inverse:      #fafafa;
+  --text/on-solid:     #fafafa;
   --text/always-black: #000000;
   --text/always-white: #ffffff;
   --text/urgent:       #814a00;
@@ -156,18 +156,24 @@
   --surface/page/default:     #ffffff;
   --surface/page/inverse:     #050505;
   --surface/card/default:     #ffffff;
-  --surface/card/subtle:      #f5f5f5;
+  --surface/card/subtle:      #fafafa;
+  --surface/page/subtle:      #fafafa;
   --surface/section/standard: #e9e9ea;
-  --surface/section/subtle:   #f5f5f5;
+  --surface/section/subtle:   #fafafa;
+  --surface/section/inverse:  #000000;
+  --surface/overlay/default:  #fafafa;
+  --surface/overlay/inverse:  #0f0e10;
+  --surface/overlay/subtle:   #e9e9ea;
 
   /* Action */
-  --action/default:       #9751c2;
-  --action/prominent:     #cc7cfc;
+  --action/default:       #7e3fa5;
+  --action/prominent:     #9751c2;
   --action/subtle:        #f6e9fd;
   --action/disabled:      #e9e9ea;
   --action/text/disabled: #83838b;
   --action/warning:       #f79000;
   --action/danger:        #ae0000;
+  --action/off:           #9a9aa0;
 
   /* Status */
   --status/default:   #7e3fa5;
@@ -205,9 +211,14 @@
   --button/content-gap:        8px;
   --button/radius:             4px;
   --button/text-size:          14px;
-  --button/solid/text:         #f5f5f5;
-  --button/outline/text:       #9751c2;
-  --button/outline/border:     #9751c2;
+  --button/solid/fill:         #7e3fa5;
+  --button/solid/hover:        #9751c2;
+  --button/solid/text:         #fafafa;
+  --button/outline/text:       #7e3fa5;
+  --button/outline/border:     #7e3fa5;
+  --button/outline/fill-hover: #f6e9fd;
+  --button/ghost/text:         #7e3fa5;
+  --button/ghost/hover:        #f6e9fd;
 
   /* Chip */
   --chip/padding-horizontal: 8px;
@@ -218,11 +229,15 @@
   --inputs/text/padding-m:      16px;
   --inputs/field/radius:        8px;
   --inputs/field/fill:          #ffffff;
-  --inputs/field/border:        #bababe;
+  --inputs/field/border:        #e9e9ea;
   --inputs/field/fill-error:    #fce9e9;
   --inputs/field/fill-disabled: #e9e9ea;
 
   /* Controls */
   --controls/switch-knob: #ffffff;
+  --selection/switch/off: #9a9aa0;
+
+  /* Textarea */
+  --textarea/radius: 16px;
 
 }

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import React, { useState } from 'react';
-import { InputField } from './InputField';
+import { Input } from './Input';
 import { Button } from './Button';
 
 const FormPage = () => {
@@ -33,19 +33,19 @@ const FormPage = () => {
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-          <InputField
+          <Input
             label="Name"
             placeholder="Jane Doe"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <InputField
+          <Input
             label="Email"
             placeholder="jane@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <InputField
+          <Input
             label="Message"
             placeholder="How can we help?"
             value={message}

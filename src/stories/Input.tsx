@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './input-field.css';
 
-export interface InputFieldProps {
+export interface InputProps {
   /** Visual variant of the input */
   variant?: 'default' | 'focus' | 'error' | 'disabled';
   /** Label text displayed above the input */
@@ -18,7 +18,7 @@ export interface InputFieldProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
-export const InputField = ({
+export const Input = ({
   variant = 'default',
   label = 'Label',
   value,
@@ -26,7 +26,7 @@ export const InputField = ({
   multiline = false,
   rows = 4,
   onChange,
-}: InputFieldProps) => {
+}: InputProps) => {
   const [focused, setFocused] = useState(false);
 
   const activeVariant = variant === 'disabled' || variant === 'error'

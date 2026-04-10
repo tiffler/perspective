@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { fn } from 'storybook/test';
-import { InputField } from './InputField';
+import { Input } from './Input';
 
 const meta = {
-  title: 'Design System/Input Field',
-  component: InputField,
+  title: 'Design System/Input',
+  component: Input,
   parameters: {
     layout: 'centered',
   },
@@ -20,11 +20,12 @@ const meta = {
   decorators: [
     (Story) => <div style={{ width: 320 }}><Story /></div>,
   ],
-} satisfies Meta<typeof InputField>;
+} satisfies Meta<typeof Input>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/** Default single-line input for collecting user text in forms, search, and settings. */
 export const Default: Story = {
   args: {
     variant: 'default',
@@ -33,6 +34,7 @@ export const Default: Story = {
   },
 };
 
+/** Focus state activates on user interaction — never set manually in static designs. */
 export const Focus: Story = {
   args: {
     variant: 'focus',
@@ -41,6 +43,7 @@ export const Focus: Story = {
   },
 };
 
+/** Error state requires an accompanying error message explaining what went wrong. */
 export const Error: Story = {
   args: {
     variant: 'error',
@@ -49,6 +52,7 @@ export const Error: Story = {
   },
 };
 
+/** Disabled for fields that are temporarily unavailable — never use to hide fields that should be removed. */
 export const Disabled: Story = {
   args: {
     variant: 'disabled',

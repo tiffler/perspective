@@ -5,14 +5,14 @@ const INTENT_ICONS: Record<string, string> = {
   default:      'star',
   error:         'dangerous',
   running:       'fiber_manual_record',
-  informational: 'info',
+  info: 'info',
   success:       'check',
   urgent:        'warning',
 };
 
 export interface ChipProps {
   /** Color intent */
-  intent?: 'default' | 'error' | 'running' | 'informational' | 'success' | 'urgent';
+  intent?: 'default' | 'error' | 'running' | 'info' | 'success' | 'urgent';
   /** Visual style */
   style?: 'solid' | 'halftone' | 'outline';
   /** Label text */

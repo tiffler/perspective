@@ -80,16 +80,16 @@
 }
 
 /* ── Informational ── */
-.chip--informational.chip--solid {
+.chip--info.chip--solid {
   background: var(--token-status-info-dark);
   color: var(--token-text-on-solid);
 }
-.chip--informational.chip--halftone {
+.chip--info.chip--halftone {
   background: var(--token-status-ht-info);
   color: var(--token-text-subtle);
   border-color: var(--token-status-info-dark);
 }
-.chip--informational.chip--outline {
+.chip--info.chip--outline {
   background: transparent;
   color: var(--token-text-subtle);
   border-color: var(--token-status-info-dark);

@@ -22,22 +22,27 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/** Highest emphasis — use only once per view for the primary action. */
 export const Solid: Story = {
   args: { variant: 'solid', intent: 'default', state: 'default', label: 'Button' },
 };
 
+/** Medium emphasis for secondary actions. */
 export const Outline: Story = {
   args: { variant: 'outline', intent: 'default', state: 'default', label: 'Button' },
 };
 
+/** Lowest emphasis for tertiary or inline actions. */
 export const Ghost: Story = {
   args: { variant: 'ghost', intent: 'default', state: 'default', label: 'Button' },
 };
 
+/** Non-interactive — only show when the action becomes available under a condition the user can address. */
 export const Disabled: Story = {
   args: { variant: 'solid', intent: 'default', state: 'disabled', label: 'Button' },
 };
 
+/** Shown while an async action is in progress. Set programmatically, never manually. */
 export const Loading: Story = {
   args: { variant: 'solid', intent: 'default', state: 'loading', label: 'Button' },
 };
@@ -50,10 +55,12 @@ export const WithTrailingIcon: Story = {
   args: { variant: 'outline', intent: 'default', state: 'default', label: 'Next', icon: 'arrow_forward', iconPosition: 'trailing' },
 };
 
+/** Destructive intent — for permanent, irreversible actions like delete. */
 export const Destructive: Story = {
   args: { variant: 'solid', intent: 'destructive', state: 'default', label: 'Button' },
 };
 
+/** Warning intent — for consequential actions that require user acknowledgment. */
 export const Warning: Story = {
   args: { variant: 'solid', intent: 'warning', state: 'default', label: 'Button' },
 };
